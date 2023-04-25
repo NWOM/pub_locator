@@ -1,5 +1,6 @@
 import pandas as pd
 import streamlit as st
+import matplotlib.pyplot as plt
 
 # Load the dataset
 df = pd.read_csv('resources/data/cleaned_pub.csv')
@@ -17,8 +18,10 @@ st.write(df.describe())
 
 # Display a histogram of the 'latitude' column
 st.write("Histogram of Latitude:")
-st.hist(df["latitude"], bins=30)
+plt.hist(df["latitude"], bins=30)
+st.pyplot()
 
 # Display a scatter plot of 'longitude' vs. 'latitude' 
 st.write("Scatter Plot of Longitude vs. Latitude:")
-st.scatter(df["longitude"], df["latitude"])
+plt.scatter(df["longitude"], df["latitude"])
+st.pyplot()
