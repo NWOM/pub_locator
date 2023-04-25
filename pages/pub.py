@@ -3,7 +3,7 @@ import pandas as pd
 import folium
 from streamlit_folium import folium_static
 
-df = pd.read_csv('C:/Users/suman/OneDrive/Desktop/Data Science Internship/near_pub/resources/data/open_pubs.csv')
+df = pd.read_csv('resources/data/open_pubs.csv')
 df.columns=['fsa_id','name','adress','postcode','easting','northing','latitude','longitude','local_authority']
 df['latitude']=df['latitude'].str.replace('\\','Na')
 df['longitude']=df['longitude'].str.replace('\\','Na')

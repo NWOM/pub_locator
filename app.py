@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 # Load the dataset
-df = pd.read_csv('C:/Users/suman/OneDrive/Desktop/Data Science Internship/near_pub/resources/data/cleaned_pub.csv')
+df = pd.read_csv('resources/data/cleaned_pub.csv')
 
 # Display some basic information and statistics about the dataset
 st.write("# Welcome to the Dataset Viewer")

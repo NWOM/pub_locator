@@ -6,7 +6,7 @@ from streamlit_folium import folium_static
 
 
 # Load data
-df = pd.read_csv('C:/Users/suman/OneDrive/Desktop/Data Science Internship/near_pub/resources/data/cleaned_pub.csv')
+df = pd.read_csv('resources/data/cleaned_pub.csv')
 
 # Set up map
 m = folium.Map(location=[df.latitude.mean(), df.longitude.mean()], zoom_start=12)
